@@ -1,6 +1,6 @@
 {
   "homepage": "https://alejandro-gonzalez-barriga.github.io/movieDate2.0/",
-  "name": "movieDate2.0",
+  "name": "movie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "depoloy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
