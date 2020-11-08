@@ -1,6 +1,6 @@
 {
   "homepage": "https://alejandro-gonzalez-barriga.github.io/movieDate2.0/",
-  "name": "my-app",
+  "name": "movieDate2.0",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
