@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/movieDate2.0/static/js/main.bf166296.chunk.js",
+    "main.js.map": "/movieDate2.0/static/js/main.bf166296.chunk.js.map",
+    "runtime-main.js": "/movieDate2.0/static/js/runtime-main.9a42f9ad.js",
+    "runtime-main.js.map": "/movieDate2.0/static/js/runtime-main.9a42f9ad.js.map",
+    "static/js/2.d99de285.chunk.js": "/movieDate2.0/static/js/2.d99de285.chunk.js",
+    "static/js/2.d99de285.chunk.js.map": "/movieDate2.0/static/js/2.d99de285.chunk.js.map",
+    "index.html": "/movieDate2.0/index.html",
+    "static/js/2.d99de285.chunk.js.LICENSE.txt": "/movieDate2.0/static/js/2.d99de285.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a42f9ad.js",
+    "static/js/2.d99de285.chunk.js",
+    "static/js/main.bf166296.chunk.js"
+  ]
+}
