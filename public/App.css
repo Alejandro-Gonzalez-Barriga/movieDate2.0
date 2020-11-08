@@ -1,0 +1,134 @@
+$star-color-default: #ccc !default;
+$star-color-active : #feca02 !default;
+
+$star-space-default: 4px !default;
+
+$star-size-default : 16px !default;
+
+$star-font-default : 24px !default;
+
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin star($size,$space,$color,$font) {
+  @include square($size);
+  color: $color;
+  font-size: $font;
+  line-height: $size;
+  margin-right: $space;
+  text-align: center;
+}
+@mixin starSize($size,$space,$font){
+  @include square($size);
+  font-size: $font;
+  margin-right: $space;
+}
+
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Initial rating setup
+.rating {
+  font-size: 0;
+  &:after {
+    content:" ";
+    clear:both;
+    display:block;
+}
+}
+
+// Rating input, label setup
+.rating {
+  input {
+    display: none;
+  }
+  &-label {
+    @include star($star-size-default,$star-space-default,$star-color-default,$star-font-default);
+    display: inline-block;
+  }
+}
+
+// Muttable rating stars
+.rating {
+  &[dir="rtl"] {
+   unicode-bidi:bidi-override;
+    > input {
+      &:checked {
+         ~ .rating-label {
+           font-size: 0;
+           &:before {
+             content: "\2605";
+             color: $star-color-active;
+           }
+         }
+      }
+    }
+  }
+}
+
+// Immutable rating stars
+.rating {
+  &-label {
+    &.is-active {
+     color: $star-color-active;
+    }
+  }
+}
+
+// Rating stars sizes
+.rating {
+  &-large {
+    .rating-label {
+      @include starSize($star-size-large,$star-space-large,$star-font-large);
+      &:before {
+        font-size: $star-font-large;
+      }
+    }
+  }
+  &-small {
+    .rating-label {
+      @include starSize($star-size-small,$star-space-small,$star-font-small);
+      &:before {
+        font-size: $star-font-small;
+      }
+    }
+  }
+}
+
+// FOR DEMO PURPOSE ONLY
+// =====================
+body {
+  padding: 30px 30px 0;
+  text-align: center;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.rating {
+  margin: 15px auto;
+}
+button {
+  display: inline-block;
+  padding: 15px 55px;
+  background-color: #1d1f20;
+  color: #fff;
+  border: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.footerBar{
+  background-color: #000;
+  display: block;
+  color: #fff;
+  padding-left: 16px
+}
