@@ -86,7 +86,7 @@ class App extends React.Component {
               </td>
               <td width="8" />
               <td>
-                <img alt="app icon" width="100" src="tmdb logo.png" />
+                <img alt="app icon" width="100" src="../public/tmdb logo.png" />
               </td>
             </tr>
           </tbody>
